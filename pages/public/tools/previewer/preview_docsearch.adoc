@@ -1,0 +1,106 @@
+---
+title:                                  Preview DocSearch
+title_extention:                        Search Engine powered by AI
+tagline:                                Search Engine powered by AI
+
+date:                                   2023-11-02
+#last_modified:                         2023-01-01
+
+description: >
+                                        Documind is an AI-powered chatbot that helps you get the most out of your
+                                        documents. With Documind, you can upload entire documents, such as textbooks,
+                                        research articles, and product manuals, and then use GPT language models to
+                                        ask questions and receive human responses.
+keywords: >
+                                        Jekyll, Theme, JekyllOne, Info, Manual, Cheatsheet, Ruby, Gem,
+                                        Documind
+
+categories:                             [ Previewer ]
+tags:                                   [ Documind ]
+
+image:
+  path:                                 /assets/images/modules/attics/library-1920x1280.jpg
+  width:                                1920
+  height:                               1280
+
+personalization:                        true
+regenerate:                             false
+permalink:                              /pages/public/tools/previewer/docsearch/
+
+resources:                              [ animate, iframer, rouge ]
+resource_options:
+  - attic:
+      slides:
+        - url:                          /assets/images/modules/attics/library-1920x1280.jpg
+          alt:                          Library
+---
+
+// Page Initializer
+// =============================================================================
+// Enable the Liquid Preprocessor
+:page-liquid:
+:url-documind--home:                    https://documind.chat/
+
+// Set (local) page attributes here
+// -----------------------------------------------------------------------------
+// :page--attr:                         <attr-value>
+
+//  Load Liquid procedures
+// -----------------------------------------------------------------------------
+{% capture load_attributes %}themes/{{site.template.name}}/procedures/global/attributes_loader.proc{%endcapture%}
+
+// Load page attributes
+// -----------------------------------------------------------------------------
+{% include {{load_attributes}} scope="global" %}
+
+
+// Page content
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[role="dropcap"]
+DocSearch is a AI-powered chatbot that uses natural language processing (NLP)
+and machine learning algorithms to support you by instant answers to your
+questions.
+
+[CAUTION]
+====
+The service *DocSearch* is only available, when you have agreed on
+*Personalization* with your *Privacy Settings* using Cookies.
+====
+
+mdi:clock-time-five-outline[24px, md-gray mt-5 mr-2]
+*2 Minutes* to read
+
+// Include sub-documents (if any)
+// -----------------------------------------------------------------------------
+[role="mt-5"]
+== Searching in Documents
+
+The template system link:{url-j1--home}[JekyllOne, {browser-window--new}] for
+the static website generator (SSG) link:{url-jekyll--home}[Jekyll, {browser-window--new}]
+supports you in finding answers to what *J1 Template* can do for your next
+projects. Below, the superpower of *DocSearch AI* is available at your
+fingertips.
+
+[TIP]
+====
+Say goodbye to the hassle of scrolling lengthy documents endlessly to find the
+information your vistors need. Try link:{url-documind--home}[Documind AI, {browser-window--new}]
+yourselves for *free*.
+====
+
+[role="mt-4"]
+Ask *your* question and get an answer in *seconds*.
+
+.Example Question 1
+[source, apib, role="mt-4 mb-4"]
+----
+What is J1 Template?
+----
+
+.Example Question 2
+[source, apib, role="mt-4 mb-4"]
+----
+How to wait for a page fully loaded in the DOM using jQuery?
+----
+
+iframe::documind[role="mb-7"]
